@@ -1,0 +1,291 @@
+
+body {
+    background-image: url("/img/fondo.png");
+}
+
+
+
+/* Formulario de iniciar sesion */
+
+.usuario-img img{
+    margin-top: 28px;
+    margin-bottom: 28px;
+    width: 170px;
+    height: 100px;
+}
+
+.contenedor-ingreso{
+    margin: 0 auto;
+    margin-top: 32px;
+    margin-bottom: 50px;
+    background-color: #ffffff;
+    border-color: #DEDDDD;
+    box-shadow: 0px 0px 50px #DEDDDD;
+    width: 390px
+}
+
+.ingreso-form-group input{
+    padding-left: 38px;
+    border-radius: 6px;
+    margin: 10px 0 25px;
+    margin-left: 10px;
+    width: 95%;
+}
+
+.ingreso-form-group::before{
+    font-family: "Font Awesome\ 5 Free";
+    position: absolute;
+    left: 40px;
+    font-size: 16px;
+    padding-top: 7px;
+} 
+
+.ingreso-form-group#ingreso-correo::before{
+    content: "\f0e0"
+}
+
+.ingreso-form-group#ingreso-contrasena::before{
+    content: "\f023"
+}
+
+.recordar-contrasena{
+    padding: 20px 0 5px;
+}
+
+.registrarse{
+    padding: 25px 0;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+.volver{
+    font-family: 'Amatic SC', cursive;
+    color:#2c2b29;
+    font-size: 40px;
+    margin-top: -30%;
+    margin-left: 45%;
+}
+
+.volver-ingreso{
+    font-family: 'Amatic SC', cursive;
+    color:#2c2b29;
+    font-size: 40px;
+    margin-top: -19%;
+    margin-left: 30%;
+}
+
+.footerDos{
+    margin-top: 86px;
+}
+
+
+
+/* Formulario de registro */
+
+.contenedor-registro{
+    margin: 0 auto;
+    margin-top: 32px;
+    margin-bottom: 50px;
+    right: 25%;
+    background-color: #ffffff;
+    border-color: #DEDDDD;
+    box-shadow: 0px 0px 50px #DEDDDD;
+    width: 700px;
+    padding: 38px;
+}
+
+.registro-img img{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    width: 120px;
+    height: 100px;
+}
+
+.form-group-registro input{
+    padding-left: 45px;
+    border-radius: 6px;
+    margin: 10px 0 25px;
+    margin-left: 10px;
+    width: 95%;
+}
+
+.form-group-registro select{
+    padding-left: 38px;
+    border-radius: 6px;
+    margin: 10px 0 25px;
+    margin-left: 10px;
+    width: 95%;
+
+}
+
+.group-label-registro {
+    margin-bottom: -20px;
+    margin-left: 12px;
+}
+
+.form-group-registro::before{
+    font-family: "Font Awesome\ 5 Free";
+    position: absolute;
+    left: 40px;
+    font-size: 16px;
+    padding-top: 40px;
+}
+
+.form-group-registro#nombre-registro::before{
+    content: "\f007"
+}
+
+.form-group-registro#apellido-registro::before{
+    content: "\f007"
+}
+
+.form-group-registro#tipo-doc-registro::before{
+    content: "\f2bb";
+    font-size: 22px;
+    padding-top: 36px;
+    left: 36px;
+}
+
+.form-group-registro#numero-doc-registro::before{
+    content: "\f2bb";
+    font-size: 22px;
+    padding-top: 36px;
+    left: 36px;
+}
+
+.form-group-registro#genero-registro::before{
+    content: "\f183";
+    font-size: 18px;
+    left: 43px;
+}
+
+.form-group-registro#direccion-registro::before{
+    content: "\f015";
+}
+
+.form-group-registro#direccion-registro::before{
+    content: "\f015";
+}
+
+.form-group-registro#telefono-registro::before{
+    content: "\f095";
+}
+
+.form-group-registro#correo-registro::before{
+    content: "\f0e0";
+}
+
+.form-group-registro#repcorreo-registro::before{
+    content: "\f0e0";
+}
+
+.form-group-registro#contrasena-registro::before{
+    content: "\f023";
+}
+
+.form-group-registro#repcontrasena-registro::before{
+    content: "\f023";
+}
+
+.terminos-registro label{
+    margin-left: 10px;
+}
+
+
+
+/* Formulario de soporte */
+
+.soporte-img img{
+    margin-top: 28px;
+    margin-bottom: 28px;
+    width: 110px;
+    height: 100px;
+}
+
+.contenedor-soporte{
+    margin: 0 auto;
+    margin-top: 32px;
+    margin-bottom: 50px;
+    background-color: #ffffff;
+    border-color: #DEDDDD;
+    box-shadow: 0px 0px 50px #DEDDDD;
+    width: 400px
+}
+
+.form-group-soporte input{
+    border-radius: 6px;
+    margin: 10px 0 20px;
+    margin-left: 10px;
+    width: 95%;
+}
+
+.boton-enviar-soporte{
+    margin-bottom: 20px;
+}
+
+
+/* Formulario restablecer contraseña*/
+.restablecer{
+    padding: 25px 0;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+.contenedor-restablecer{
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    background-color: #ffffff;
+    border-color: #DEDDDD;
+    box-shadow: 0px 0px 50px #DEDDDD;
+    width: 390px
+}
+
+
+/* Boton general para los formularios */
+
+.btn-sample { 
+    color: #FFFFFF; 
+    background-color: #63C76A; 
+    border-color: #C7FECB; 
+  } 
+   
+  .btn-sample:hover, 
+  .btn-sample:focus, 
+  .btn-sample:active, 
+  .btn-sample.active, 
+  .open .dropdown-toggle.btn-sample { 
+    color: #FFFFFF; 
+    background-color: #51B858; 
+    border-color: #C7FECB; 
+  } 
+   
+  .btn-sample:active, 
+  .btn-sample.active, 
+  .open .dropdown-toggle.btn-sample { 
+    background-image: none; 
+  } 
+   
+  .btn-sample.disabled, 
+  .btn-sample[disabled], 
+  fieldset[disabled] .btn-sample, 
+  .btn-sample.disabled:hover, 
+  .btn-sample[disabled]:hover, 
+  fieldset[disabled] .btn-sample:hover, 
+  .btn-sample.disabled:focus, 
+  .btn-sample[disabled]:focus, 
+  fieldset[disabled] .btn-sample:focus, 
+  .btn-sample.disabled:active, 
+  .btn-sample[disabled]:active, 
+  fieldset[disabled] .btn-sample:active, 
+  .btn-sample.disabled.active, 
+  .btn-sample[disabled].active, 
+  fieldset[disabled] .btn-sample.active { 
+    background-color: #63C76A; 
+    border-color: #C7FECB; 
+  } 
+   
+  .btn-sample .badge { 
+    color: #63C76A; 
+    background-color: #FFFFFF; 
+  }

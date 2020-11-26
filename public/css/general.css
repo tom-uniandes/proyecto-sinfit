@@ -1,0 +1,10 @@
+nav.navbar{
+    background-color:#C7FECB !important;
+}
+.navbar ul li a{
+    
+    font-family: 'Amatic SC', cursive;
+    color:#2c2b29;
+    font-size: 25px;
+   
+}

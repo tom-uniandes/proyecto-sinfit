@@ -1,0 +1,177 @@
+.container-factura{
+    margin-top: -670px;
+    margin-left: 436px;
+    margin-bottom: -111px;
+    width: 790px;
+}
+
+.container-listado-factura{
+    margin-top: -670px;
+    margin-left: 436px;
+    margin-bottom: 100px;
+    width: 790px;
+}
+
+.card.informacion-factura{
+   
+    background-color: white;
+}
+
+.factura.list-group {
+    width: 780px;
+    margin-bottom: -164px;
+    margin-left: -4px;
+}
+
+
+.factura.list-group-item {
+    width: 712px;
+    margin-bottom: 10px;
+    background-color:rgb(248, 247, 232);
+    margin-left: -44px;
+}
+
+.card-titulo h1{
+    margin-top: 30px;
+    margin-left: 270px;
+    font-size:19px;
+    font-family:'Abel', sans-serif;
+    
+}
+
+.factura-codigo{
+    
+    margin-top: 10px;
+}
+
+.factura-subtotal {
+    margin-left: 96px;
+    margin-top: -40px;
+}
+
+.factura-iva {
+    margin-left: 226px;
+    margin-top: -40px;
+}
+
+.factura-total {
+    margin-left: 316px;
+    margin-top: -40px;
+}
+
+.factura-fecha {
+    margin-left: 440px;
+    margin-top: -40px;
+}
+
+.titulo-codigo h1{
+    margin-top: 15px;
+    margin-left: 10px;
+    font-size:18px;
+    font-family:'Abel', sans-serif;
+}
+
+.titulo-subtotal h1{
+    margin-left: 106px;
+    margin-top: -29px;
+    font-size:18px;
+    font-family:'Abel', sans-serif;
+}
+
+.titulo-iva h1{
+    margin-left: 234px;
+    margin-top: -29px;
+    font-size:18px;
+    font-family:'Abel', sans-serif;
+}
+
+.titulo-total h1{
+    margin-left: 332px;
+    margin-top: -29px;
+    font-size:18px;
+    font-family:'Abel', sans-serif;
+}
+
+.titulo-fecha h1{
+    margin-left: 476px;
+    margin-top: -29px;
+    font-size:18px;
+    font-family:'Abel', sans-serif;
+}
+
+.titulo-pago h1{
+    margin-left: 570px;
+    margin-top: -29px;
+    font-size:18px;
+    font-family:'Abel', sans-serif;
+}
+
+.aviso-nofactura{
+    margin-bottom: 300px;
+}
+
+.pagado {
+    color: #00B762;
+}
+
+.acciones i{
+    cursor: pointer;
+}
+
+.posicion-acciones{
+    margin-top: -40px;
+    margin-left: 585px;
+}
+
+.posicion-eliminar{
+    margin-top: -25px;
+    margin-left: 645px;
+}
+
+.barra-avance {
+    height: 30px;
+    border: 1px solid #999;
+    max-width: 800px;
+    width: 90%;
+    margin-left: 16px;
+    margin-bottom: 50px;
+}
+
+.porcentaje {
+    width: 0%;
+    height: 100%;
+    background-color: #00B762;
+    background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+    background-size: 1rem 1rem;
+    transition: width .3s ease;
+}
+
+.cara-feliz img{
+    margin-top:-45px;
+    margin-bottom: -118px;
+    margin-left: 596px;
+    width: 30px;
+    height: 30px;
+}
+
+.cara-triste img{
+    margin-top: -24px;
+    width: 36px;
+    height: 36px;
+}
+
+.cara-poker img{
+    margin-top: -50px;
+    margin-bottom: -75px;
+    margin-left: 280px;
+    width: 45px;
+    height: 35px;
+}
+
+.titulo-progreso h2{
+    margin-top: 60px;
+    margin-bottom: -10px;
+    margin-left: 230px;
+    font-size:19px;
+    font-family:'Abel', sans-serif;
+}

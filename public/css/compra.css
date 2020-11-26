@@ -1,0 +1,147 @@
+nav.navbar{
+    background-color:#C7FECB !important;
+
+}
+.navbar ul li a{
+    
+    font-family: 'Amatic SC', cursive;
+    color:#2c2b29;
+    font-size: 25px;
+   
+}
+body {
+    background-image: url("/img/fondo.png");
+}
+
+.helados{
+    font-family: 'Amatic SC', cursive;
+    
+}
+
+.helados h1{
+
+    text-align: center;
+    margin: 20px 0 15px 0;
+    font-size: 100px;
+    color:#787776;
+    text-shadow: -1px -1px 0px #dbffdd,
+    3px 3px 0px #C7FECB,
+    6px 6px 0px #e8ffe9;
+
+}
+
+.linea{
+    border-top: 5px solid #FAFEC7;
+    margin-bottom: 20px;
+}
+.contenedor-informacion.fresa{
+    border: 2px dotted #dbf8dd;
+    border-radius: 6px;
+    background-color: #dbf8dd;
+    width: 350px;
+    height: 350px;
+    margin-left: 845px;
+    margin-top: -350px;
+    border-color: rgb(168, 235, 106);
+}
+.contenedor-informacion.cereza{
+    border: 2px dotted #dbf8dd;
+    border-radius: 6px;
+    background-color: #dbf8dd;
+    width: 350px;
+    height: 350px;
+    margin-left: 41px;
+    margin-top: 50px;
+    border-color: rgb(168, 235, 106);
+}
+
+.contenedor-informacion.vainilla{
+    border: 2px dotted #dbf8dd;
+    border-radius: 6px;
+    background-color: #dbf8dd;
+    width: 350px;
+    height: 350px;
+    margin-left: 445px;
+    margin-top: -350px;
+    border-color: rgb(168, 235, 106);
+}
+
+.contenedor-informacion.chocolate{
+    border: 2px dotted #dbf8dd;
+    border-radius: 6px;
+    background-color: #dbf8dd;
+    width: 350px;
+    height: 350px;
+    margin-left: 41px;
+    margin-top: 45px;
+    border-color: rgb(168, 235, 106);
+
+}
+.contenedor-informacion.mora{
+    border: 2px dotted #dbf8dd;
+    border-radius: 6px;
+    background-color: #dbf8dd;
+    width: 350px;
+    height: 350px;
+    margin-left: 445px;
+    margin-top: -350px;
+    border-color: rgb(168, 235, 106);
+}
+.contenedor-informacion.te{
+    border: 2px dotted #dbf8dd;
+    border-radius: 6px;
+    background-color: #dbf8dd;
+    width: 350px;
+    height: 350px;
+    margin-left: 845px;
+    margin-top: -350px;
+    border-color: rgb(168, 235, 106);
+
+}
+
+.imagen img{
+    position: relative;
+    width:250px;
+    height:150px;
+    border: 5px solid #86c089;
+    margin:auto;
+    display:block;
+    top:10px;
+    border-radius: 2px;
+}
+.nombre-helado h2{
+    text-align: center;
+    font-size: 30px;
+    color:#070707;
+    font-family: 'Amatic SC', cursive;
+    padding-top: 9%;
+    text-shadow: -1px -1px 0px #dbffdd,
+    3px 3px 0px #e5f19b,
+    6px 6px 0px #e8ffe9;
+}
+.precio h1{
+    text-align: center;
+    margin: 20px 0 15px 0;
+    font-size: 25px;
+    color:#787776;
+    font-family: 'Amatic SC', cursive;
+    padding-top: 0%;
+}
+.boton button{
+    color:black;
+    border-color:#6a6d6b;
+    background:#86c089 !important;
+    position: relative;
+    top: -50px;
+    font-size: 16px;
+
+}
+.boton:hover button{
+    background:#FAFEC7 !important;
+    border-color:rgb(252, 210, 169);
+    color:#070707;
+}
+
+.footer-posicion {
+    margin-top: 100px;
+}

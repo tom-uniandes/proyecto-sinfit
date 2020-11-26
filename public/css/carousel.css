@@ -1,0 +1,34 @@
+
+.carousel {
+    margin: 20px 0 15px 0;
+    width: 710px; 
+    height: 420px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel-caption h2{
+    font-size: 65px;
+    color:#000000;
+    text-shadow: -1px -1px 0px #dbffdd,
+    3px 3px 0px #ecf7af;
+    font-family: 'Julius Sans One', sans-serif;
+    vertical-align: text-top;
+}
+
+.linea.dos{
+    border-top: 5px solid #FAFEC7;
+    margin-bottom: 20px; 
+}
+
+.titulo h1{
+    text-align: center;
+    margin: 20px 0 15px 0;
+    font-size: 100px;
+    color:#787776;
+    text-shadow: -1px -1px 0px #dbffdd,
+    3px 3px 0px #C7FECB,
+    6px 6px 0px #e8ffe9;
+    font-family: 'Amatic SC', cursive;
+}
+

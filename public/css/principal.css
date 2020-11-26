@@ -1,0 +1,64 @@
+nav.navbar{
+    background-color:#C7FECB !important;
+
+}
+.navbar ul li a{
+    
+    font-family: 'Amatic SC', cursive;
+    color:#030303;
+    font-size: 25px;
+   
+}
+
+body {
+    background-color:#C7FECB;
+}
+
+.texto{
+    
+    position: absolute;
+}
+.contenedor-imagen img{
+    position: absolute;
+    width:700px;
+    height:550px;
+    left:0%;
+    top:70px;
+ 
+}
+
+.texto.titulo h1{
+    font-family: 'Amatic SC', cursive;
+    font-size: 90px;
+    position: relative;
+    text-shadow: -1px -1px 0px #dbffdd,
+    3px 3px 0px #ecf7af;
+    left:560.5px;
+    top:70px;
+}
+.texto.descripcion h2{
+    font-family: 'Amatic SC', cursive;
+    font-size: 36px;
+    position: relative;
+    left:511px;
+    top:210px;
+}
+.texto.redes h3{
+    font-family: 'Amatic SC', cursive;
+    font-size: 20px;
+    position: relative;
+    left:735px;
+    top:450px;
+}
+
+.redes-sociales img{
+    position: relative;
+    left:785px;
+    top:460px;
+    widows:140px;
+    height:80px;
+}
+
+.footer-posicion {
+    margin-top: 650px;
+}

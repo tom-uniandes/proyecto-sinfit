@@ -1,0 +1,177 @@
+.logo-img img{
+    position: absolute;
+    width:700px;
+    height:440px;
+    left:34%;
+    top:300px;
+    opacity: 0.3;
+}
+
+.panel.crear-usuario{
+    width: 315px;
+    height: 59px;
+    border: 2px solid #f8f79a;
+    margin-left: -45px;
+    background-color:  #f5fcb5;
+    margin-top: 30px;
+}
+
+.panel.crear-usuario a{
+    font-family: 'Amatic SC', cursive;
+    font-size: 37px;
+    color:#787776;
+    margin-left: 85px;
+    margin-top: 20px;
+}
+
+.titulo h1{
+    font-family: 'Amatic SC', cursive;
+    font-size: 70px;
+    position: relative;
+    text-shadow: -1px -1px 0px #dbffdd,
+    3px 3px 0px #dce2b7;
+    text-align: center;
+  
+}
+
+.linea{
+    border-top: 5px solid #FAFEC7;
+    
+}
+
+.container-informacion-usuario{
+    margin-left: 436px;
+    width: 790px;
+    margin-top: -650px;
+    margin-bottom: 140px;
+   
+}
+
+.boton-actualizar{
+    margin-left: -168px;
+    margin-top: -10px;
+    margin-bottom: 0px
+}
+
+.boton-eliminar{
+    margin-left: 186px;
+    margin-top: -123px;
+    margin-bottom: 10px
+}
+
+.boton-facturar{
+    margin-left: 40px;
+    margin-top: -104px
+}
+
+.registrar-factura{
+    margin-left: -130px;
+}
+
+.ver-factura{
+    margin-left: 570px;
+    margin-bottom: 130px;
+}
+
+.contenedor-informacion-usuario{
+    margin-bottom: 50px;
+    right: 25%;
+    background-color: #ffffff;
+    border-color: #DEDDDD;
+    width: 700px;
+}
+
+
+.form-group-registro input{
+    padding-left: 45px;
+    border-radius: 6px;
+    margin: 10px 0 25px;
+    margin-left: 10px;
+    width: 95%;
+}
+
+.form-group-registro select{
+    padding-left: 38px;
+    border-radius: 6px;
+    margin: 10px 0 25px;
+    margin-left: 10px;
+    width: 95%;
+
+}
+
+.group-label-registro {
+    margin-bottom: -20px;
+    margin-left: 12px;
+}
+
+.form-group-registro::before{
+    font-family: "Font Awesome\ 5 Free";
+    position: absolute;
+    left: 40px;
+    font-size: 16px;
+    padding-top: 43px;
+}
+
+.form-group-registro#nombre-registro::before{
+    content: "\f007"
+}
+
+.form-group-registro#apellido-registro::before{
+    content: "\f007"
+}
+
+.form-group-registro#tipo-doc-registro::before{
+    content: "\f2bb";
+    font-size: 22px;
+    padding-top: 36px;
+    left: 36px;
+}
+
+.form-group-registro#numero-doc-registro::before{
+    content: "\f2bb";
+    font-size: 22px;
+    padding-top: 40px;
+    left: 36px;
+}
+
+.form-group-registro#genero-registro::before{
+    content: "\f183";
+    font-size: 18px;
+    left: 43px;
+}
+
+.container-factura{
+    margin-left: 436px;
+    width: 790px;
+    margin-top: -730px;
+   
+}
+
+.form-group-registro#direccion-registro::before{
+    content: "\f015";
+}
+
+.form-group-registro#direccion-registro::before{
+    content: "\f015";
+}
+
+.form-group-registro#telefono-registro::before{
+    content: "\f095";
+}
+
+.form-group-registro#correo-registro::before{
+    content: "\f0e0";
+}
+
+.form-group-registro#repcorreo-registro::before{
+    content: "\f0e0";
+}
+
+.form-group-registro#contrasena-registro::before{
+    content: "\f023";
+}
+
+.form-group-registro#repcontrasena-registro::before{
+    content: "\f023";
+}
+

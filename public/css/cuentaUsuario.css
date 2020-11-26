@@ -1,0 +1,126 @@
+.container{
+    margin-left: -9px;
+    height: 470px;
+    margin-top: -15px;
+}
+.card{
+    background-color: #dbffdd;
+}
+.card.dos{
+    height: 350px;
+    background-color: #dbffdd;
+}
+.card-title h6{
+    font-family: 'Amatic SC', cursive;
+    font-size: 70px;
+    position: relative;
+    text-shadow: -1px -1px 0px #dbffdd,
+    3px 3px 0px #dce2b7;
+    text-align: center;
+    margin-top: -40px;
+}
+
+.card-img img{
+    height: 70px;
+    width: 70px;
+    display:block;
+    margin:auto;
+}
+
+.footer-dos-posicion{
+    margin-top: 50px;
+}
+
+
+.list-group {
+    width: 310px;
+    margin-left: -20px;
+    height: 200px;
+}
+.list-group-item.active{
+    background-color:rgb(247, 245, 170);
+    color:black;
+    border-color: rgb(234, 247, 64);
+}
+.list-group-item{
+    background-color:rgb(248, 247, 232);
+}
+.container-informacion{
+    margin-left: 436px;
+    width: 790px;
+    margin-top: -440px;
+   
+}
+
+.container-tittle h7{
+    font-family: 'Amatic SC', cursive;
+    font-size: 50px;
+    position: relative;
+    text-shadow: -1px -1px 0px #dbffdd,
+    3px 3px 0px #dce2b7;
+    margin-left: 200px;
+}
+.card.informacion-basica{
+   
+    background-color: white;
+}
+.card-texto {
+    font-size:18px;
+    font-family:'Abel', sans-serif;
+}
+.form-control{
+  border-color:#6fcc73;
+  outline: none;
+  
+}
+
+.texto-list{
+    position: relative;
+    left: 62px;
+}
+
+.usuario-list-group::before{
+    font-family: "Font Awesome\ 5 Free";
+    position: absolute;
+    left: 21px;
+    font-size: 16px;
+}
+
+.usuario-list-group#usuario-datos::before{
+    content: "\f007"
+}
+
+.usuario-list-group#usuario-pedidos::before{
+    content: "\f466"
+}
+
+.usuario-list-group#usuario-puntos::before{
+    content: "\f024"
+}
+
+.usuario-list-group#usuario-favoritos::before{
+    content: "\f005"
+}
+
+.usuario-list-group#usuario-configuracion::before{
+    content: "\f013"
+}
+
+
+
+.boton button{
+    color:black;
+    border-color:#6a6d6b!important;
+    background:#a7ecaa!important;
+    position: relative;
+    font-size: 12px;
+    margin-left: 270px;
+    font-family:'Abel', sans-serif;
+    margin-top: 20px;
+}
+.boton:hover button{
+    color:#070707;
+}
+
+
+
