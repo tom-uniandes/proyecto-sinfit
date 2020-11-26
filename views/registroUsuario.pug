@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/bootstrap-4.5.2/css/bootstrap.min.css")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css")
+        link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css")
+        link(rel="stylesheet", href="/css/formulario.css")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap")
+        link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css")
+
+        title=nombrePagina
+    body
+        include navbar       
+        
+        .container.modal-dialog
+                .container.modal-content.contenedor-registro
+                    .col-12.registro-img.text-center
+                        img(src='/img/iconos/icono-registro.png')
+                        //if errores
+                            each error in errores
+                                .alert.alert-danger(role="alert")=error.message
+                        if locals.mensajes
+                            each categoria in Object.keys(locals.mensajes)
+                                each error in mensajes[categoria]
+                                    .alert.alert-danger(role="alert")=error
+
+                    form(action="/registro-cliente" method="POST")
+                        .row.py-2
+                            .col
+                                #nombre-registro.form-group-registro
+                                    label.lbl-nombre.group-label-registro Nombres 
+                                    input.form-control(type='text' name='txtNombreRegistro' value= txtNombreRegistro)
+                                #tipo-doc-registro.form-group-registro
+                                    label.lbl-tipo-documento.group-label-registro Tipo de documento
+                                    select.form-control(name='cmbTipoDocumento')
+                                        option(value='' selected='Seleccione') Seleccione
+                                        option(value='1') Cédula de ciudadanía
+                                        option(value='2') Cédula de extranjería 
+                                        option(value='3') Tarjeta de identidad
+                                #genero-registro.form-group-registro
+                                    label.lbl-genero.group-label-registro Género 
+                                    select.form-control(name='cmbGeneroRegistro')
+                                        option(value='' selected='Seleccione') Seleccione
+                                        option(value='1') Masculino
+                                        option(value='2') Femenino
+                                        option(value='3') Otro
+                                #direccion-registro.form-group-registro
+                                    label.lbl-fecha.group-label-registro Dirección
+                                    input.form-control(type='text', name='txtDireccionRegistro' value= txtDireccionRegistro)
+                                #correo-registro.form-group-registro
+                                    label.lbl-correo.group-label-registro Correo electrónico
+                                    input.form-control(type='text', name='txtCorreoRegistro' value= txtCorreoRegistro)
+                            
+                            .col
+                                #apellido-registro.form-group-registro
+                                    label.lbl-apellido.group-label-registro Apellidos 
+                                    input.form-control(type='text',name='txtApellidoRegistro' value= txtApellidoRegistro)
+                                #numero-doc-registro.form-group-registro
+                                    label.lbl-numero-documento.group-label-registro Número de documento
+                                    input.form-control(type='number', name='txtNumeroDocumentoRegistro' min = "1" value= txtNumeroDocumentoRegistro)
+                                #fechnacimiento-registro.form-group-registro
+                                    label.lbl-fecha.group-label-registro Fecha de nacimiento 
+                                    input.form-control(type='date', name='dateFechaNacimientoRegistro' value= dateFechaNacimientoRegistro)
+                                #telefono-registro.form-group-registro
+                                    label.lbl-telefono.group-label-registro Número de teléfono 
+                                    input.form-control(type='number', name='txtNumeroTelefonoRegistro' min = "1" value= txtNumeroTelefonoRegistro)
+                                #contrasena-registro.form-group-registro
+                                    label.lbl-contrasena.group-label-registro Contraseña 
+                                    input.form-control(type='password', name='txtContrasenaRegistro')
+                        .terminos-registro.text-center
+                                input.check-registro(type='checkbox' name='chkTerminos')
+                                label.terminos-registro Acepto términos y condiciones 
+                        
+                        .text-center
+                            button.btn.btn-sample(type='submit' id='registrar' value='registrar') Registrar
+        
+        include footerDos
+
+    script(type="text/javascript", src="/bootstrap-4.5.2/js/jquery-3.5.1.min.js")
+    script(type="text/javascript", src="/bootstrap-4.5.2/js/bootstrap.min.js")
+    script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js")
+    script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js")
+
+block registro

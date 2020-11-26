@@ -1,0 +1,41 @@
+extends administrador
+
+block administrador
+
+    form(action=`/administrador/facturas/${usuario.url}` method='POST')
+        .container-factura
+            .row.py-3.d-flex.align-items-center     
+                .col-11.card-body.w-20.py-3.p-4.card.informacion-basica
+                    .card-texto
+                        |Número de documento:
+                        input.form-control(type='text' value=usuario.personaDocumento readonly)
+                        hr(align='left' noshade='noshade' size='2' width='700px')
+                    .card-texto
+                        | Nombre del cliente: 
+                        input.form-control(type='text' value=usuario.personaNombre + ' ' + usuario.personaApellido readonly)
+                        hr(align='left' noshade='noshade' size='2' width='700px')
+
+                    .card-texto
+                        | Fecha de la factura: 
+                        input.form-control(type='text' value=fecha readonly)
+                        hr(align='left' noshade='noshade' size='2' width='700px')
+                    
+                    .card-texto
+                        |Subtotal:
+                        input.form-control(type='number' placeholder="" name='txtSubtotalFactura' min = "0" required)
+                        hr(align='left' noshade='noshade' size='2' width='700px')
+                    .card-texto
+                        |IVA %:
+                        input.form-control(type='number' placeholder="00.00" name='txtIvaFactura' min = "0" step=".01" required)
+                        hr(align='left' noshade='noshade' size='2' width='700px')
+                    .card-texto
+                        |Total:
+                        input.form-control(type='number' placeholder="" name='txtTotalFactura' min = "0" step=".01" required)
+                        hr(align='left' noshade='noshade' size='2' width='700px')
+                    
+                    .boton.registrar-factura
+                        button.btn.btn-primary(type='submit') Registrar factura
+
+    form(action=`/administrador/ver-facturas/${usuario.url}`)
+        .boton.ver-factura
+            button.btn.btn-primary() Ver facturas

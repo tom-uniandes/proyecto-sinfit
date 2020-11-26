@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/css/general.css")
+        link(href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap",rel="stylesheet")
+
+    body
+        nav.navbar.navbar-expand-lg.navbar-light.bg-light
+            a.navbar-brand(href='/')
+                img(src='../../img/logo.png' width='80' height='50' alt=''  class="img-responsive")
+            button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+                span.navbar-toggler-icon
+            
+            .collapse.navbar-collapse(id='navbarSupportedContent')
+                ul.navbar-nav.mr-auto
+                    li.nav-item
+                        a.nav-link(href='/') Inicio
+                    li.nav-item
+                        a.nav-link(href='/compra') Comprar
+                    li.nav-item
+                        a.nav-link(href='/blog') Blog
+                    li.nav-item
+                        a.nav-link(href='/soporte') Soporte
+                ul.navbar-nav.float-right
+                    if user
+                        li.nav-item
+                            a.nav-link(href='/administrador') Administración
+                        li.nav-item
+                            a.nav-link(href='/salir') Cerrar sesión
+                    else
+                        li.nav-item
+                            a.nav-link(href='/ingreso') Iniciar Sesión
+                        li.nav-item
+                            a.nav-link(href='/registro-administrador') Registro Administrador
+                    
+block navbar

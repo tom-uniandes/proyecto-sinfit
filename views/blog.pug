@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/bootstrap-4.5.2/css/bootstrap.min.css")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css")
+        link(rel="stylesheet", href="/css/blog.css")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap")
+        title=nombrePagina
+    body
+        include navbar  
+        
+        .texto.titulo
+                h1 Conoce todos nuestros secretos
+        .linea
+        .container.fluid
+                .contenedor
+                    .texto.descripcion
+                        h2 ¿Como se logra el sabor caracteristico del chocolate que tanto amamos?
+                    .imagen
+                        img(src="/img/38635.jpg" alt="")
+                    
+                    .texto.comentario
+                        p  La base cremosa se puede conseguir con alimentos ricos en grasas sanas y proteínasos como leche de coco, leche desnatada, yogur natural, crema agria para luego dar el toque con chocolate amargo que tanto amamos. 
+                        P por otra parte, el chocolate amargo tiene muchos beneficios ya que contiene una cantidad considerable de fibra soluble y está repleto de minerales, además puede mejorar muchos de los factores de riesgo de los problemas cardíacos.
+        .linea-separadora
+        .container.fluid
+                .contenedor
+                    .texto.descripcion
+                        h2 ¿Por qué utilizamos la leche de almendras en nuestros helados?
+                    .imagen
+                        img(src="/img/18256.jpg" alt="") 
+                    .texto.comentario
+                        p La bebida de almendras es un alimento energético recomendable para personas que llevan a cabo una alta actividad física, así como para intolerantes a la lactosa y celiacos.
+                        p Al igual que ocurre con los frutos secos, parte de las grasas que contiene ayudan a reducir los niveles de colesterol y triglicéridos.
+                        p Contiene fibra que ayuda a combatir el estreñimiento y regula el tránsito intestinal. También aporta gran cantidad de calcio que junto al fósforo mantiene en buen estado huesos y dientes.
+                        p Asimismo, el contenido en vitaminas E y B de la bebida de almendras supone un antioxidante que retrasa el envejecimiento celular y protegen el sistema cardiovascular.          
+        .linea-separadora
+        .container.fluid
+                .contenedor
+                    .texto.descripcion
+                        h2 ¿Por qué hacemos helado de té verde?
+                    .imagen
+                        img(src="/img/verde.jpg" alt="") 
+                    .texto.comentario
+                        p El té verde es una rica fuente de polifenoles que protegen contra las enfermedades cardiovasculares y sus factores de riesgo, incluida la hipertensión arterial y la dislipidemia (el aumento de la concentración plasmática de colesterol y lípidos en la sangre). Es un regulador natural de los niveles de azúcar en sangre. Asimismo, es un excelente antioxidante, potencia el sistema inmunológico, ayuda a bajar los niveles de ansiedad y mejorar la concentración y la memoria.
+                    
+        .linea-separadora
+
+        include footer
+    script(type="text/javascript", src="/bootstrap-4.5.2/js/jquery-3.5.1.min.js")
+    script(type="text/javascript", src="/bootstrap-4.5.2/js/bootstrap.min.js")
+    script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js")
+    script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js")
+
+block blog

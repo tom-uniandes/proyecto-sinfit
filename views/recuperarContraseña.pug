@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/bootstrap-4.5.2/css/bootstrap.min.css")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css")
+        link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap")
+        link(rel="stylesheet", href="/css/formulario.css")
+        link(rel="stylesheet", href="/css/general.css")
+        title=nombrePagina
+    body
+        nav.navbar
+            a.navbar-brand(href='/ingreso')
+                img(src='img/iconos/icono-volver.png' width='30' height='30' alt=''  class="img-responsive")
+                .volver-ingreso
+                    h5 Volver al inicio de sesión
+        
+        .container.modal-dialog.text-center
+                .container.modal-content.contenedor-restablecer
+                    .col-12.usuario-img
+                        img(src='/img/logo.png')
+
+                        if locals.mensajes
+                            each categoria in Object.keys(locals.mensajes)
+                                each error in mensajes[categoria]
+                                    .alert(class=`${categoria}` role="alert")=error
+
+                    .col-12
+                        form(action="/restablecer" method="POST")
+                            #ingreso-correo.ingreso-form-group
+                                input.form-control(type='text' name='txtCorreo' placeholder='Correo electronico')
+                            .restablecer
+                                button.btn.btn-sample(type='submit') Recuperar Contraseña
+        
+        .footerDos
+            include footerDos
+        
+    script(type="text/javascript", src="/bootstrap-4.5.2/js/jquery-3.5.1.min.js")
+    script(type="text/javascript", src="/bootstrap-4.5.2/js/bootstrap.min.js")
+    script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js")
+    script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js")
+block ingreso

@@ -1,0 +1,13 @@
+extends administrador
+
+include mixins/gestionarUsuario
+
+block administrador
+    
+    .container-informacion-usuario
+        .row.py-2  
+            .col-11.card-body.w-20.py-3.p-4.card.informacion-basica
+                +gestionarUsuario(usuario)
+            .boton.boton-facturar
+                form(action=`/administrador/facturas/${usuario.url}`)
+                    button.btn() Facturar

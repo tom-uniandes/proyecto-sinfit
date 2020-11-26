@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/bootstrap-4.5.2/css/bootstrap.min.css")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css")
+        link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css")
+        link(rel="stylesheet", href="/css/formulario.css")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap")
+        link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css")
+
+        title=nombrePagina
+    body
+        include navbar       
+        
+        .container.modal-dialog
+                .container.modal-content.contenedor-registro
+                    .col-12.registro-img.text-center
+                        img(src='/img/iconos/icono-registro.png')
+                        //if errores
+                            each error in errores
+                                .alert.alert-danger(role="alert")=error.message
+                        if locals.mensajes
+                            each categoria in Object.keys(locals.mensajes)
+                                each error in mensajes[categoria]
+                                    .alert.alert-danger(role="alert")=error
+
+                    form(action="/registro-administrador" method="POST")
+                        .row.py-2
+                            .col
+                                #nombre-registro.form-group-registro
+                                    label.lbl-nombre.group-label-registro Nombres 
+                                    input.form-control(type='text' name='txtNombreRegistro' value= txtNombreRegistro)
+
+                                #correo-registro.form-group-registro
+                                    label.lbl-correo.group-label-registro Correo electrónico
+                                    input.form-control(type='text', name='txtCorreoRegistro' value= txtCorreoRegistro)
+                            
+                            .col
+                                #apellido-registro.form-group-registro
+                                    label.lbl-apellido.group-label-registro Apellidos 
+                                    input.form-control(type='text',name='txtApellidoRegistro' value= txtApellidoRegistro)
+                        
+                                #contrasena-registro.form-group-registro
+                                    label.lbl-contrasena.group-label-registro Contraseña 
+                                    input.form-control(type='password', name='txtContrasenaRegistro')
+                        
+                        .text-center
+                            button.btn.btn-sample(type='submit' id='registrar' value='registrar') Registrar
+        
+        include footerDos
+
+    script(type="text/javascript", src="/bootstrap-4.5.2/js/jquery-3.5.1.min.js")
+    script(type="text/javascript", src="/bootstrap-4.5.2/js/bootstrap.min.js")
+    script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js")
+    script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js")
+
+block registro

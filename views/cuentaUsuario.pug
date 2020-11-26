@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/bootstrap-4.5.2/css/bootstrap.min.css")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css")
+        link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css")
+        link(rel="stylesheet", href="/css/cuentaUsuario.css")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Abel&display=swap")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap")
+        title=nombrePagina
+    body
+        include navbar
+        
+        .container
+            .row.py-4.d-flex.align-items-center
+                .col-12
+                    .card(style="width: 320px;")
+                        .card-body.w-320.p-5
+                            .card-title
+                                h6 Mi cuenta
+                            .card-img
+                                img(src='/img/iconos/usuario.png')
+                .col-12
+                    .card.dos(style="width: 320px;")
+                        .card-body.w-320.p-4
+                            .card-list
+                                ul.list-group
+                                    button.list-group-item.list-group-item-action(type="button")
+                                        #usuario-datos.usuario-list-group
+                                            .texto-list
+                                                |  Mi datos personales
+                                    button.list-group-item.list-group-item-action(type="button")
+                                        #usuario-pedidos.usuario-list-group
+                                            .texto-list
+                                                | Historial de pedidos
+                                    button.list-group-item.list-group-item-action(type="button")
+                                        #usuario-puntos.usuario-list-group
+                                            .texto-list
+                                                | Puntos acumulados
+                                    button.list-group-item.list-group-item-action(type="button")
+                                        #usuario-favoritos.usuario-list-group
+                                            .texto-list
+                                                | Favoritos
+                                    button.list-group-item.list-group-item-action(type="button")
+                                        #usuario-configuracion.usuario-list-group
+                                            .texto-list
+                                                | Configuración
+    
+        .container-informacion
+            .container-tittle
+                h7 Información personal
+            if(usuarios)
+                each contador in usuarios
+                    .row.py-3.d-flex.align-items-center     
+                        .col-11.card-body.w-20.py-3.p-4.card.informacion-basica
+                            .card-texto
+                                |Número de documento:
+                                input.form-control(type='text' placeholder=''  value=contador.personaDocumento readonly)
+                                hr(align='left' noshade='noshade' size='2' width='700px')
+                            .card-texto
+                                | Nombres: 
+                                input.form-control(type='text' placeholder='' value=contador.personaNombre + ' ' + contador.personaApellido readonly)
+                                hr(align='left' noshade='noshade' size='2' width='700px')
+                            .card-texto
+                                |Fecha de nacimiento 
+                                input.form-control(type='text' placeholder='' value=contador.personaFechaNacimiento readonly)
+                                hr(align='left' noshade='noshade' size='2' width='700px' )
+                            .card-texto
+                                |Dirección:
+                                input.form-control(type='text' placeholder=''  value=contador.personaDireccion)
+                                hr(align='left' noshade='noshade' size='2' width='700px')
+                            .card-texto
+                                |Correo electrónico:
+                                input.form-control(type='text' placeholder="" value=contador.personaEmail)
+                                hr(align='left' noshade='noshade' size='2' width='700px')
+                            .card-texto  
+                                a(href=`${contador.url}`) Presiona aquí para cambiar la contraseña (url amigable)
+                            .boton
+                                button.btn.btn-primary(type='submit') Actualizar             
+                                                                
+        include footerDos
+
+    script(type="text/javascript", src="/bootstrap-4.5.2/js/jquery-3.5.1.min.js")
+    script(type="text/javascript", src="/bootstrap-4.5.2/js/bootstrap.min.js")
+    script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js")
+    script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js")
+
+block cuentaUsuario
+//pre= vardump(persona)

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/bootstrap-4.5.2/css/bootstrap.min.css")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css")
+        link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css")
+        link(rel="stylesheet", href="/css/administrador.css")
+        link(rel="stylesheet", href="/css/cuentaUsuario.css")
+        link(rel="stylesheet", href="/css/factura.css")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Abel&display=swap")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap")
+        title=nombrePagina
+    body
+        include navbar
+        
+        .logo-img
+            img(src='/img/logo.png')
+        .titulo 
+            h1 Panel de administración de SinFit
+        .linea
+        .py-4.d-flex.align-items-center
+        .col-12
+            .card(style="width: 320px;")
+                .card-body.w-320.p-5
+                    .card-title
+                        h6 CLIENTES
+                    .card-img
+                        img(src='/img/iconos/usuario.png')
+                    .panel.crear-usuario
+                        a(href="/registro-cliente" class="boton") Crear Cliente
+                            span +  
+        .col-12
+            .card.dos(style="width: 320px;")
+                .card-body.w-320.p-4
+                    .card-list
+                        ul.list-group
+                            ul#persona.contador
+                                if(usuarios)
+                                    each contador in usuarios
+                                        #usuario-datos.usuario-list-group  
+                                            a(href=`/administrador/${contador.url}`)= contador.personaNombre + ' ' + contador.personaApellido 
+        
+
+        script(type="text/javascript", src="/bootstrap-4.5.2/js/jquery-3.5.1.min.js")
+        script(type="text/javascript", src="/bootstrap-4.5.2/js/bootstrap.min.js")
+        script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js")
+        script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js")
+        
+            
+block administrador
+include footerDos

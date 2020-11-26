@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/bootstrap-4.5.2/css/bootstrap.min.css")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css")
+        link(rel="stylesheet", href="/css/compra.css")
+        link(href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap",rel="stylesheet")
+        
+        title=nombrePagina
+    body
+        include navbar 
+        
+        .helados
+            h1 Nuestros Productos
+                .linea
+                    .contenedor-informacion.cereza
+                        .imagen 
+                            img(src="img/cereza.jpeg" alt="")
+                        .nombre-helado
+                            h2 Helado de cereza
+                        .precio
+                            h1 $3.000 COP
+                        .boton
+                            button.btn.btn-primary(type='submit') Añadir al carrito     
+                    .contenedor-informacion.vainilla
+                        .imagen 
+                            img(src="img/vainilla.jpg" alt="")
+                        .nombre-helado
+                            h2 Helado de vainilla
+                        .precio
+                            h1 $3.000 COP
+                        .boton
+                            button.btn.btn-primary(type='submit') Añadir al carrito
+                    .contenedor-informacion.fresa
+                        .imagen 
+                            img(src="img/fresa.jpg" alt="")
+                        .nombre-helado
+                            h2 Helado de fresa
+                        .precio
+                            h1 $5.000 COP
+                        .boton
+                            button.btn.btn-primary(type='submit') Añadir al carrito
+                    .contenedor-informacion.chocolate
+                        .imagen 
+                            img(src="img/chocolate.png" alt="")
+                        .nombre-helado
+                            h2 Helado de chocolate
+                        .precio
+                            h1 $5.000 COP
+                        .boton
+                            button.btn.btn-primary(type='submit') Añadir al carrito
+                    .contenedor-informacion.mora
+                        .imagen 
+                            img(src="img/mora.jpg" alt="")
+                        .nombre-helado
+                            h2 Helado de mora
+                        .precio
+                            h1 $5.000 COP
+                        .boton
+                            button.btn.btn-primary(type='submit') Añadir al carrito
+                    .contenedor-informacion.te
+                        .imagen 
+                            img(src="img/te.jpg" alt="")
+                        .nombre-helado
+                            h2 Helado de té
+                        .precio
+                            h1 $5.000 COP
+                        .boton
+                            button.btn.btn-primary(type='submit') Añadir al carrito
+                    
+        include footer
+    script(type="text/javascript", src="/bootstrap-4.5.2/js/jquery-3.5.1.min.js")
+    script(type="text/javascript", src="/bootstrap-4.5.2/js/bootstrap.min.js")
+    script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js")
+    script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js")
+block compra
+
+    

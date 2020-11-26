@@ -1,0 +1,40 @@
+mixin gestionarUsuario(usuario = {})
+
+    form(action=`/administrador/${usuario.url}` method='POST')
+        
+        .contenedor-informacion-usuario
+            .row.py-2
+                .col.card-texto
+                    #nombre-registro.form-group-registro
+                        label.lbl-nombre.group-label-registro Nombres 
+                        input.form-control(type='text' name='txtNombreUsuario' value=usuario.personaNombre required)
+                    #numero-doc-registro.form-group-registro
+                        label.lbl-numero-documento.group-label-registro Número de documento
+                        input.form-control(type='number', name='txtNumeroDocumentoUsuario' value=usuario.personaDocumento min = "1" required)
+                    #direccion-registro.form-group-registro
+                        label.lbl-fecha.group-label-registro Dirección
+                        input.form-control(type='text', name='txtDireccionUsuario' value=usuario.personaDireccion required)
+                    #correo-registro.form-group-registro
+                        label.lbl-correo.group-label-registro Correo electrónico
+                        input.form-control(type='email', name='txtCorreoUsuario' value=usuario.personaEmail required)
+                
+                .col.card-texto
+                    #apellido-registro.form-group-registro
+                        label.lbl-apellido.group-label-registro Apellidos 
+                        input.form-control(type='text',name='txtApellidoUsuario' value=usuario.personaApellido required)
+                    
+                    #fechnacimiento-registro.form-group-registro
+                        label.lbl-fecha.group-label-registro Fecha de nacimiento 
+                        input.form-control(type='date', name='dateFechaNacimientoUsuario' value=usuario.personaFechaNacimiento required)
+                    #telefono-registro.form-group-registro
+                        label.lbl-telefono.group-label-registro Número de teléfono 
+                        input.form-control(type='number', name='txtNumeroTelefonoUsuario' value=usuario.personaTelefono min = "1" required)
+                    #repcorreo-registro.form-group-registro
+                        label.lbl-repcorreo-registro.group-label-registro Repita el correo electrónico
+                        input.form-control(type='email', name='txtRepetirCorreoUsuario' value=usuario.personaEmail required)
+            
+            .boton.boton-actualizar
+                button#actulizar-usuario.btn(type='submit') Actualizar
+    .boton.boton-eliminar
+        button#eliminar-usuario.btn(data-usuario-url= usuario.url) Eliminar
+    script(src="/dist/bundle.js")

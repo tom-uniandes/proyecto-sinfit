@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/bootstrap-4.5.2/css/bootstrap.min.css")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css")
+        link(rel="stylesheet", href="/css/formulario.css")
+        title=nombrePagina
+    body
+        include navbar
+
+        .modal-dialog.text-center
+            .modal-content.contenedor-soporte
+                .col-12.soporte-img
+                    img(src='/img/iconos/icono-soporte.png')
+                form.col-12
+                    #soporte-nombre.form-group-soporte
+                        input.form-control(type='text' placeholder='Nombre completo' required)
+                    #soporte-correo.form-group-soporte
+                        input.form-control(type='text' placeholder='Correo electrónico' required)
+                    #soporte-mensaje.form-group-soporte
+                        input.form-control(type='textarea' style="WIDTH: 350px; HEIGHT: 120px", placeholder='Escriba su mensaje aquí' required)
+                    .boton-enviar-soporte
+                        button.btn.btn-sample(type='submit') Enviar
+
+        
+        include footer
+    
+    script(type="text/javascript", src="/bootstrap-4.5.2/js/jquery-3.5.1.min.js")
+    script(type="text/javascript", src="/bootstrap-4.5.2/js/bootstrap.min.js")
+    script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js")
+    script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js")
+
+block soporte

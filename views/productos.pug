@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/bootstrap-4.5.2/css/bootstrap.min.css")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css")
+        link(rel="stylesheet", href="/css/compra.css")
+        link(rel="stylesheet", href="/css/carousel.css")
+        link(href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap",rel="stylesheet")
+        link(href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet")
+        title=nombrePagina
+  
+    body        
+        include navbar
+
+        .titulo
+            h1 Conoce nuestros maravillosos productos
+                .linea.dos
+                    div(id="carouselExampleControls" class="carousel slide" data-ride="carousel")
+                        .carousel-inner
+                            .carousel-item.active
+                                img(class="d-block w-100" src="img/vainilla.jpg" alt="First slide")
+                                .carousel-caption.d-none.d-md-block
+                                    h2 Helado de vainilla
+                            .carousel-item
+                                img(class="d-block w-100" src="img/fresa.jpg" alt="Second slide")
+                                .carousel-caption.d-none.d-md-block
+                                    h2 Helado de fresa
+                            .carousel-item
+                                img(class="d-block w-100" src="img/cereza.jpeg" alt="Third slide")
+                                .carousel-caption.d-none.d-md-block
+                                    h2 Helado de cereza
+                            .carousel-item
+                                img(class="d-block w-100" src="img/mora.jpg" alt="Third slide")
+                                .carousel-caption.d-none.d-md-block
+                                    h2 Helado de mora
+                            .carousel-item
+                                img(class="d-block w-100" src="img/te.jpg" alt="Third slide")
+                                .carousel-caption.d-none.d-md-block
+                                    h2 Helado de té verde
+                            .carousel-item
+                                img(class="d-block w-100" src="img/chocolate.png" alt="Third slide")
+                                .carousel-caption.d-none.d-md-block
+                                    h2 Helado de chocolate
+
+                        a(class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev")
+                            span(class="carousel-control-prev-icon" aria-hidden="true")
+                            span.sr-only Previous
+
+                        a(class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next")
+                            span(class="carousel-control-next-icon" aria-hidden="true")
+                            span.sr-only Next
+        include footer
+
+    script(type="text/javascript", src="/bootstrap-4.5.2/js/jquery-3.5.1.min.js")
+    script(type="text/javascript", src="/bootstrap-4.5.2/js/bootstrap.min.js")
+    script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js")
+    script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js")
+    
+block producto

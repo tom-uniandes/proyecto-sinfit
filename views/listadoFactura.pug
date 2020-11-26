@@ -1,0 +1,80 @@
+extends administrador
+
+block administrador
+    
+    .container-listado-factura
+            .row.py-3.d-flex.align-items-center     
+                .col-11.card-body.w-20.py-3.p-4.card.informacion-factura
+                    
+                    .card-texto
+                        |Número de documento:
+                        input.form-control(type='text' value=usuario.personaDocumento readonly)
+                        hr(align='left' noshade='noshade' size='2' width='700px')
+                    .card-texto
+                        | Nombre del cliente: 
+                        input.form-control(type='text' value=usuario.personaNombre + ' ' + usuario.personaApellido readonly)
+                        hr(align='left' noshade='noshade' size='2' width='700px')
+                    
+                    .card-titulo
+                        h1 Facturas del cliente
+
+                    if factura.length
+                        .titulo-codigo
+                            h1 Código
+                        .titulo-subtotal
+                            h1 Subtotal
+                        .titulo-iva
+                            h1 IVA %
+                        .titulo-total
+                            h1 Total
+                        .titulo-fecha
+                            h1 Fecha
+                        .titulo-pago
+                            h1 ¿Con pago?
+
+                    .listado-facturas
+                        ul
+                          if factura.length 
+                            each facturas in factura 
+                                
+                                li.factura.list-group-item(data-factura=facturas.facturaId)
+                                    .factura.list-group
+                                        .factura-codigo
+                                            p=facturas.facturaId
+                                        .factura-subtotal
+                                            p=facturas.facturaSubtotal
+                                        .factura-iva
+                                            p=facturas.facturaIva
+                                        .factura-total
+                                            p=facturas.facturaTotal
+                                        .factura-fecha
+                                            p=facturas.facturaFecha
+                                        .acciones.posicion-acciones
+                                            if facturas.facturaEstado
+                                                i.far.fa-check-circle.pagado
+                                            else
+                                                i.far.fa-circle
+                                        .acciones.posicion-eliminar
+                                            i.fas.fa-trash
+                            .avance
+                                .titulo-progreso
+                                    h2 Progreso de pagos
+                                .cara-feliz
+                                    img(src='/img/Caras/Cara-Feliz.png')
+                                .cara-poker
+                                    img(src='/img/Caras/Cara-Poker.png')
+                                .cara-triste
+                                    img(src='/img/Caras/Cara-triste.png')
+                                #barra-avance.barra-avance
+                                    #porcentaje.porcentaje
+                          else
+                            .aviso-nofactura
+                                p No hay facturas asociadas para el cliente
+
+            
+
+    script(src="/dist/bundle.js")
+    script(src='https://kit.fontawesome.com/069f0f74da.js' crossorigin='anonymous')
+    
+                       
+                    

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.8.2/css/all.css")
+    body
+        footer.page-footer.font-small.blue-grey.lighten-5.footer-posicion
+            div(style='background-color: #5ED826')
+                .container
+                    .row.py-4.d-flex.align-items-center
+                        .col-md-6.col-lg-5.text-center.text-md-left.mb-4.mb-md-0
+                            h6.mb-0 Interactúa con nosotros y síguenos por redes sociales!
+
+                        .col-md-6.col-lg-7.text-center.text-md-right
+                            a.btn-floating.btn-sm.rgba-black-slight.mx-1(href="https://es-la.facebook.com/")
+                                i.fab.fa-facebook-f
+                            a.btn-floating.btn-sm.rgba-black-slight.mx-1(href="https://twitter.com/?lang=es")
+                                i.fab.fa-twitter
+                            a.btn-floating.btn-sm.rgba-black-slight.mx-1(href="https://www.instagram.com/?hl=es-la")
+                                i.fab.fa-instagram.white-text
+        
+            .container.text-center.text-md-left.mt-4
+                .row.mt-3.dark-grey-text
+                    .col-md-2.col-lg-2.col-xl-4.mb-2
+                        h6.text-uppercase.font-weight-bold SINFIT
+                        hr.teal.accent-3.mb-3.mt-0.d-inline-block.mx-auto(style='width: 60px;')
+                        p Somos una empresa 100% huilense, nuestros helados saludables son fabricados con la más alta calidad y sobre todo manteniendo el sabor orginal de la fruta
+                        p.font-weight-bold ¡Disfruta lo mejor!
+                    .col-md-2.col-lg-2.col-xl-3.mb-3.mx-auto
+                        h6.text-uppercase.font-weight-bold Medios de pago
+                        hr.teal.accent-3.mb-3.mt-0.d-inline-block.mx-auto(style='width: 60px;')
+                        p
+                            img(src='img/footer/pago.png' width='220' height='50' alt=''  class="img-responsive")
+                        p
+                            img(src='img/footer/pse.png' width='50' height='50' alt=''  class="img-responsive")
+                         
+                    .col-md-2.col-lg-2.col-xl-2.mb-md-0.mb-3
+                        h6.text-uppercase.font-weight-bold Contacto
+                        hr.teal.accent-3.mb-3.mt-0.d-inline-block.mx-auto(style='width: 60px;')
+                        p
+                            i.fas.fa-home  Neiva - Huila
+                        p
+                            i.fas.fa-envelope  soporte@sinfit.com
+                        p
+                            i.fas.fa-phone  +57 3130000001
+            
+            .container.text-center.text-md-left.mt-0
+                .row.justify-content-start
+                    .col-md-7.mb-4.dark-grey-text
+                        hr.teal.accent-3.mb-3.mt-0.d-inline-block.mx-auto(style='width: 60px;')
+                        p
+                            a.font-weight-bold.dark-grey-text(href="/") Términos y condiciones
+                    
+                    .col-md-5.mb-4.dark-grey-text
+                        label.font-weight-bold Recibe información y ofertas de nuestros productos
+                        form.input-group
+                            input.form-control(type='text' placeholder='Ingresa tu correo electrónico')
+                            .input-ground-append
+                                button.btn.btn-success.btn-sm.my-1(type='submit') Enviar
+                    
+        include footerDos
+
+block footer
